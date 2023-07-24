@@ -20,8 +20,7 @@ function NavBar(){
                     <li><a href='#contact'>Contact</a></li>
                 </ul>
             </div>
-            <div className='burger' onClick={toggleMenu}></div>
-            <button className='burger' onClick={toggleMenu}>
+            <button className={classNames ('burger', {'open': openMenu})} onClick={toggleMenu}>
                 <span className='burger-bar'></span>
             </button>
         </nav>

@@ -61,12 +61,14 @@ nav {
       display: block;
       position: fixed;
       top: 2em;
-      right: 2em;
+      right: 4em;
+      padding: 0;
+      border: 0;
     }
     .burger-bar,
     .burger-bar::before,
     .burger-bar::after{
-    display: none;
+    display: block;
     float: right;
     position: relative;
     width: 40px;
@@ -89,10 +91,16 @@ nav {
 .burger-bar::after{
     transform: translateY(12px);
 }
-.navbar.open .burger-bar::after{
+.burger.open .burger-bar::after{
     transform: rotate(-45deg);
 }
-.navbar.open .burger-bar::before{
+.burger.open .burger-bar::before{
     transform: rotate(45deg);
+}
+.burger.open{
+    right: 8;
+}
+.burger.open .burger-bar{
+    width: 0;
 }
   }
