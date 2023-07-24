@@ -55,6 +55,34 @@ nav {
   
     .navbar.open {
       display: block;
+    
+    }
+    .navbar.open ul {
+        list-style: none;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .navbar.open .logo{
+        padding:5em;
+    }
+    .navbar li {
+        
+    }
+    
+    .navbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 2em;
+        text-decoration: none;
+      }
+    
+    .navbar li a:hover{
+        color: #f8bddf;
     }
   
     .burger {
